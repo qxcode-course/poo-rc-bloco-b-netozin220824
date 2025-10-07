@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_15-00-13",
+            "content": "class Chinela:\n    def __init__(self, tamanho: int = 0):\n        self.__tamanho = tamanho\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor: int):\n        self.__tamanho = valor\n\ndef main():\n    chinela1 = Chinela(38)\n    print(chinela1.getTamanho())\n    chinela1.setTamanho(40)\n    print(chinela1.getTamanho())",
+            "lines": "15"
+        }
+    ]
+}
