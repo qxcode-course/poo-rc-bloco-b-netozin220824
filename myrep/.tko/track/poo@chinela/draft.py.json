@@ -32,7 +32,12 @@
         },
         {
             "label": "2025-10-16_17-08-57",
-            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho: int = 0\n    def __str__(self):\n        return f\"sua Chinela \u00e9 tamanho={self.__tamanho}\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, tamanho: int):\n        if tamanho >=20 and tamanho <=50 and tamanho % 2 == 0:\n            self.__tamanho = tamanho\n        else:\n            print(f\"Tamanho inv\u00e1lido: '{tamanho}'. Por favor, digite um n\u00famero par entre 20 e 50.\")\n\ndef main():\n    chinela = Chinela()\n    while chinela.getTamanho() == 0:\n        n = int(input())\n        chinela.setTamanho(n)\n    print(chinela)\n\nmain()",
+            "content": "@@ -126,17 +126,16 @@\n tamanho=\n- \n %7Bself.__\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-22_14-04-39",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho: int = 0\n    def __str__(self):\n        return f\"sua Chinela \u00e9 tamanho= {self.__tamanho}\"\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, tamanho: int):\n        if tamanho >=20 and tamanho <=50 and tamanho % 2 == 0:\n            self.__tamanho = tamanho\n        else:\n            print(f\"Tamanho inv\u00e1lido: '{tamanho}'. Por favor, digite um n\u00famero par entre 20 e 50.\")\n\ndef main():\n    chinela = Chinela()\n    while chinela.getTamanho() == 0:\n        n = int(input())\n        chinela.setTamanho(n)\n    print(chinela)\n\nmain()",
             "lines": "23"
         }
     ]

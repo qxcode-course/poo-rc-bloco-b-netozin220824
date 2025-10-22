@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-22_14-37-49",
+            "content": "@@ -574,19 +574,9 @@\n misa\n-: Camisa = \n+=\n Cami\n@@ -613,19 +613,17 @@\n        n\n- = \n+=\n input()%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-22_14-39-06",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho : str = \"\"\n    def __str__(self):\n        return f\"sua camisa e tamanho = {self.__tamanho}\"\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self,tamanho: str) -> bool:\n        if tamanho == \"pp\" or tamanho == \"p\" or tamanho == \"m\" or tamanho == \"g\" or tamanho == \"gg\":\n            self.__tamanho = tamanho\n            return True\n        else:\n            print(f\"Tamanho inv\u00e1lido: '{tamanho}'. Por favor, digite pp, p, m, g ou gg.\")\n            return False\n    def main():\n        camisa: Camisa = Camisa()\n        while True:\n            n = input()\n            if camisa.setTamanho(n):\n                break\n        print(camisa)\n    main()\n",
+            "lines": "22"
+        }
+    ]
+}

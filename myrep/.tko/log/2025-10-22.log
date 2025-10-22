@@ -1,0 +1,13 @@
+2025-10-22 14:04:36, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-22 14:04:39, EXEC, v:1, k:poo@chinela, mode:FREE, size:23
+2025-10-22 14:21:54, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-22 14:25:24, SELF, v:1, k:poo@chinela, rate:100, alone:10
+2025-10-22 14:25:46, SELF, v:1, k:poo@chinela, rate:100, alone:10, study:103
+2025-10-22 14:25:54, MOVE, v:1, k:poo@camisa, mode:DOWN
+2025-10-22 14:26:02, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-22 14:37:49, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:22
+2025-10-22 14:37:56, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-22 14:39:06, EXEC, v:1, k:poo@camisa, mode:FREE, size:22
+2025-10-22 14:43:30, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-22 14:44:04, SELF, v:1, k:poo@camisa, rate:100, alone:10, study:13
+2025-10-22 14:44:10, MOVE, v:1, k:poo@roupa, mode:DOWN
