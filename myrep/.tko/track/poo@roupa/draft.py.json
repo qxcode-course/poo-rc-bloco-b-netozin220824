@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-24_17-10-33",
+            "content": "@@ -1,699 +0,0 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanho : str = %22%22%0A    def __str__(self):%0A        return f%22sua camisa e tamanho = %7Bself.__tamanho%7D%22%0A    def getTamanho(self):%0A        return self.__tamanho%0A    def setTamanho(self,tamanho: str) -%3E bool:%0A        if tamanho == %22pp%22 or tamanho == %22p%22 or tamanho == %22m%22 or tamanho == %22g%22 or tamanho == %22gg%22:%0A            self.__tamanho = tamanho%0A            return True%0A        else:%0A            print(f%22Tamanho inv%C3%A1lido: '%7Btamanho%7D'. Por favor, digite pp, p, m, g ou gg.%22)%0A            return False%0Adef main():%0A    roupa: Roupa = Roupa()%0A    while True:%0A        n: str = input()%0A        if roupa.setTamanho(n):%0A            break%0A    print(roupa)%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-24_17-25-34",
+            "content": "@@ -448,13 +448,15 @@\n t(f%22\n-Valor\n+Tamanho\n  inv\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-24_17-26-39",
+            "content": "@@ -475,12 +475,25 @@\n ho%7D'\n- ten\n+. Por favor, digi\n te p\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-24_17-27-31",
+            "content": "@@ -31,17 +31,8 @@\n self\n-, tamanho\n ):%0A \n@@ -43,24 +43,26 @@\n    self.\n+__\n tamanho \n = tamanh\n@@ -57,18 +57,18 @@\n nho \n-= tamanho%0A\n+: str = %22%22\n %0A   \n@@ -76,14 +76,15 @@\n def \n-vestir\n+__str__\n (sel\n@@ -108,28 +108,19 @@\n n f%22\n-Vestindo uma roup\n+sua camis\n a \n-d\n e ta\n@@ -124,31 +124,35 @@\n  tamanho\n+ =\n  %7Bself.\n+__\n tamanho%7D\n .%22%0A    d\n@@ -143,17 +143,16 @@\n tamanho%7D\n-.\n %22%0A    de\n@@ -157,13 +157,18 @@\n def \n-lavar\n+getTamanho\n (sel\n@@ -190,49 +190,495 @@\n urn \n-f%22Lavando a roupa de tamanho %7Bself.tamanho%7D.%22\n+self.__tamanho%0A    def setTamanho(self,tamanho: str) -%3E bool:%0A        if tamanho == %22pp%22 or tamanho == %22p%22 or tamanho == %22m%22 or tamanho == %22g%22 or tamanho == %22gg%22:%0A            self.__tamanho = tamanho%0A            return True%0A        else:%0A            print(f%22Valor inv%C3%A1lido: '%7Btamanho%7D' tente pp, p, m, g ou gg.%22)%0A            return False%0Adef main():%0A    roupa: Roupa = Roupa()%0A    while True:%0A        n: str = input()%0A        if roupa.setTamanho(n):%0A            break%0A    print(roupa)%0Amain()\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-24_17-29-48",
+            "content": "@@ -44,34 +44,32 @@\n ):%0A        self.\n-__\n tamanho = tamanh\n@@ -70,24 +70,25 @@\n tamanho%0A\n+%0A\n     def \n __str__(\n@@ -83,15 +83,14 @@\n def \n-__str__\n+vestir\n (sel\n@@ -114,19 +114,28 @@\n n f%22\n-sua camis\n+Vestindo uma roup\n a \n+d\n e ta\n@@ -143,27 +143,23 @@\n anho\n- =\n  %7Bself.\n-__\n tamanho%7D\n %22%0A  \n@@ -154,16 +154,17 @@\n tamanho%7D\n+.\n %22%0A    de\n@@ -169,18 +169,13 @@\n def \n-getTamanho\n+lavar\n (sel\n@@ -197,248 +197,49 @@\n urn \n-self.__tamanho%0A    def setTamanho(self,tamanho: str) -%3E bool:%0A        if tamanho == %22pp%22 or tamanho == %22p%22 or tamanho == %22m%22 or tamanho == %22g%22 or tamanho == %22gg%22:%0A            \n+f%22Lavando a roupa de tamanho %7B\n self.\n-__\n tamanho\n- = tamanho%0A            return True%0A        return False\n+%7D.%22\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-24_17-33-18",
+            "content": "@@ -430,277 +430,16 @@\n     \n-else:%0A            print(f%22Valor inv%C3%A1lido: '%7Btamanho%7D'. Por favor, digite pp, p, m, g ou gg.%22)%0A            return False%0Adef main():%0A    roupa: Roupa = Roupa()%0A    while True:%0A        n: str = input()%0A        if roupa.setTamanho(n):%0A            break%0A    print(roupa)%0Amain()%0A\n+return False\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-24_17-39-15",
+            "content": "class Roupa:\n    def __init__(self, tamanho):\n        self.__tamanho = tamanho\n    def __str__(self):\n        return f\"sua camisa e tamanho = {self.__tamanho}\"\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self,tamanho: str) -> bool:\n        if tamanho == \"pp\" or tamanho == \"p\" or tamanho == \"m\" or tamanho == \"g\" or tamanho == \"gg\":\n            self.__tamanho = tamanho\n            return True\n        else:\n            print(f\"Valor inv\u00e1lido: '{tamanho}'. Por favor, digite pp, p, m, g ou gg.\")\n            return False\ndef main():\n    roupa: Roupa = Roupa()\n    while True:\n        n: str = input()\n        if roupa.setTamanho(n):\n            break\n    print(roupa)\nmain()\n",
+            "lines": "22"
+        }
+    ]
+}
