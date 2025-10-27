@@ -82,8 +82,13 @@
         },
         {
             "label": "2025-10-25_05-03-52",
-            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho = \"\"  \n    def getTamanho(self):\n        return self.__tamanho \n    def setTamanho(self, tamanho):\n        \n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if tamanho in tamanhos_validos:\n            self.__tamanho = tamanho  # Atribui o tamanho se for v\u00e1lido\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\ndef __str__(self):\n        return f\"sua roupa \u00e9 tamanho = {self.__tamanho}\"\ndef main():\n    roupa: Roupa = Roupa()\n    while roupa.getTamanho() == \"\":\n        n: str = input()\n        roupa.setTamanho(n)\n    print(roupa)\nmain()",
+            "content": "@@ -152,16 +152,25 @@\n manho):%0A\n+        %0A\n         \n@@ -194,37 +194,37 @@\n = %5B%22\n-pp\n+PP\n %22, %22\n-p\n+P\n %22, %22\n-m\n+M\n %22, %22\n-g\n+G\n %22, %22\n-gg\n+GG\n %22, %22\n-xg\n+XG\n %22%5D%0A \n@@ -298,16 +298,51 @@\n  tamanho\n+  # Atribui o tamanho se for v%C3%A1lido\n %0A       \n",
             "lines": "21"
+        },
+        {
+            "label": "2025-10-26_23-23-29",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho = \"\"  \n    def getTamanho(self):\n        return self.__tamanho \n    def setTamanho(self, tamanho):\n        tamanhos_validos = [\"pp\", \"p\", \"m\", \"g\", \"gg\", \"xg\"]\n        if tamanho in tamanhos_validos:\n            self.__tamanho = tamanho\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\ndef __str__(self):\n        return f\"sua roupa \u00e9 tamanho = {self.__tamanho}\"\ndef main():\n    roupa: Roupa = Roupa()\n    while roupa.getTamanho() == \"\":\n        n: str = input()\n        roupa.setTamanho(n)\n    print(roupa)\nmain()",
+            "lines": "20"
         }
     ]
 }
