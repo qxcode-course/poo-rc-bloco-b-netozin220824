@@ -87,8 +87,73 @@
         },
         {
             "label": "2025-10-26_23-23-29",
-            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho = \"\"  \n    def getTamanho(self):\n        return self.__tamanho \n    def setTamanho(self, tamanho):\n        tamanhos_validos = [\"pp\", \"p\", \"m\", \"g\", \"gg\", \"xg\"]\n        if tamanho in tamanhos_validos:\n            self.__tamanho = tamanho\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\ndef __str__(self):\n        return f\"sua roupa \u00e9 tamanho = {self.__tamanho}\"\ndef main():\n    roupa: Roupa = Roupa()\n    while roupa.getTamanho() == \"\":\n        n: str = input()\n        roupa.setTamanho(n)\n    print(roupa)\nmain()",
+            "content": "@@ -1,33 +1,4 @@\n-from pyparsing import line%0A%0A%0A\n clas\n@@ -57,163 +57,14 @@\n nho \n-: str = %22%22%0A    def __str__(self):%0A        if self.__tamanho == %22%22:%0A            return %22size:()%22%0A        else:%0A            return f%22size:(%7Bself.__tamanho%7D)%22\n+= %22%22  \n %0A   \n@@ -111,24 +111,25 @@\n lf.__tamanho\n+ \n %0A    def set\n@@ -145,20 +145,16 @@\n elf,\n+ \n tamanho\n-: str\n ):%0A \n@@ -173,43 +173,49 @@\n hos_\n-disponiveis = %5B%22PP%22,%22P%22,%22M%22,%22G%22,%22GG\n+validos = %5B%22pp%22, %22p%22, %22m%22, %22g%22, %22gg%22, %22xg\n %22%5D%0A \n@@ -248,18 +248,14 @@\n hos_\n-disponivei\n+valido\n s:%0A \n@@ -338,17 +338,17 @@\n alor inv\n-a\n+%C3%A1\n lido, te\n@@ -366,217 +366,169 @@\n M, G\n-%22)%0Adef main(\n+, GG ou XG%22)%0Adef __str__(self\n ):%0A    \n+  \n-roupa: Roupa = Roupa()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D\n+  return f%22sua roupa %C3%A9 tamanho = %7Bself.__tamanho%7D%22%0Adef main():%0A    roupa: Roupa = Roupa()%0A    while roupa.getTamanho()\n  == %22\n-show\n %22:%0A \n@@ -538,93 +538,68 @@\n     \n-    print(roupa)%0A        elif args%5B0%5D == %22size%22:%0A            roupa.setTamanho(args%5B1%5D\n+n: str = input()%0A        roupa.setTamanho(n)%0A    print(roupa\n )%0Ama\n",
             "lines": "20"
+        },
+        {
+            "label": "2025-10-27_01-28-33",
+            "content": "@@ -174,17 +174,16 @@\n n %22size:\n- \n ()%22%0A    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-28-53",
+            "content": "@@ -522,9 +522,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-29-05",
+            "content": "@@ -546,16 +546,8 @@\n M, G\n- ,GG ,XG\n %22)%0Ad\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-29-27",
+            "content": "@@ -391,13 +391,8 @@\n %22GG%22\n-,%22XG%22\n %5D%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-29-50",
+            "content": "@@ -547,16 +547,17 @@\n  P, M, G\n+ \n ,GG ,XG%22\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-30-09",
+            "content": "@@ -548,17 +548,16 @@\n P, M, G,\n- \n GG ,XG%22)\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-30-15",
+            "content": "@@ -551,18 +551,18 @@\n M, G, GG\n-,\n  \n+,\n XG%22)%0Adef\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-30-22",
+            "content": "@@ -555,11 +555,9 @@\n , GG\n- ou\n+,\n  XG%22\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-30-40",
+            "content": "@@ -176,18 +176,16 @@\n %22size: (\n-PP\n )%22%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-31-02",
+            "content": "@@ -176,16 +176,18 @@\n %22size: (\n+PP\n )%22%0A     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-31-22",
+            "content": "@@ -581,16 +581,23 @@\n    roupa\n+: Roupa\n  = Roupa\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-32-32",
+            "content": "@@ -219,17 +219,16 @@\n  f%22size:\n- \n (%7Bself._\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-27_01-32-42",
+            "content": "from pyparsing import line\n\n\nclass Roupa:\n    def __init__(self):\n        self.__tamanho : str = \"\"\n    def __str__(self):\n        if self.__tamanho == \"\":\n            return \"size: ()\"\n        else:\n            return f\"size: ({self.__tamanho})\"\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self,tamanho: str):\n        tamanhos_disponiveis = [\"PP\",\"P\",\"M\",\"G\",\"GG\",\"XG\"]\n        if tamanho in tamanhos_disponiveis:\n            self.__tamanho = tamanho\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\ndef main():\n    roupa = Roupa()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(roupa)\n        elif args[0] == \"size\":\n            roupa.setTamanho(args[1])\nmain()",
+            "lines": "32"
         }
     ]
 }
