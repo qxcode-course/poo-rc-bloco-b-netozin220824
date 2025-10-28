@@ -7,7 +7,12 @@
         },
         {
             "label": "2025-10-22_14-39-06",
-            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho : str = \"\"\n    def __str__(self):\n        return f\"sua camisa e tamanho = {self.__tamanho}\"\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self,tamanho: str) -> bool:\n        if tamanho == \"pp\" or tamanho == \"p\" or tamanho == \"m\" or tamanho == \"g\" or tamanho == \"gg\":\n            self.__tamanho = tamanho\n            return True\n        else:\n            print(f\"Tamanho inv\u00e1lido: '{tamanho}'. Por favor, digite pp, p, m, g ou gg.\")\n            return False\n    def main():\n        camisa: Camisa = Camisa()\n        while True:\n            n = input()\n            if camisa.setTamanho(n):\n                break\n        print(camisa)\n    main()\n",
+            "content": "@@ -540,16 +540,20 @@\n n False%0A\n+    \n def main\n@@ -556,16 +556,20 @@\n main():%0A\n+    \n     cami\n@@ -594,16 +594,20 @@\n a()%0A    \n+  \n+  \n while Tr\n@@ -622,14 +622,13 @@\n     \n-n: str\n+    n\n  = i\n@@ -634,16 +634,20 @@\n input()%0A\n+    \n         \n@@ -687,14 +687,22 @@\n     \n+   \n+ \n break%0A\n+    \n     \n@@ -715,15 +715,19 @@\n camisa)%0A\n+    \n main()%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-27_23-31-23",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho : str = \"\"\n    def __str__(self):\n        return f\"sua camisa e tamanho = {self.__tamanho}\"\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self,tamanho: str) -> bool:\n        if tamanho == \"pp\" or tamanho == \"p\" or tamanho == \"m\" or tamanho == \"g\" or tamanho == \"gg\":\n            self.__tamanho = tamanho\n            return True\n        else:\n            print(f\"Tamanho inv\u00e1lido: '{tamanho}'. Por favor, digite pp, p, m, g ou gg.\")\n            return False\ndef main():\n    camisa: Camisa = Camisa()\n    while True:\n        n: str = input()\n        if camisa.setTamanho(n):\n            break\n    print(camisa)\nmain()\n",
             "lines": "22"
         }
     ]

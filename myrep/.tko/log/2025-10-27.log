@@ -84,3 +84,30 @@
 2025-10-27 03:08:17, MOVE, v:1, k:poo@motoca, mode:BACK
 2025-10-27 03:08:25, SELF, v:1, k:poo@motoca, rate:100, alone:10
 2025-10-27 03:09:04, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-27 23:04:31, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 23:08:04, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:104
+2025-10-27 23:26:00, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:73
+2025-10-27 23:26:04, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 23:26:14, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 23:27:17, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0
+2025-10-27 23:28:06, EXEC, v:1, k:poo@motouber, mode:FULL, rate:87, size:88
+2025-10-27 23:30:21, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 23:30:26, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-27 23:30:29, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100, size:88
+2025-10-27 23:30:33, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-27 23:31:22, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-27 23:31:23, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:22
+2025-10-27 23:31:51, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-27 23:32:13, SELF, v:1, k:poo@motouber, rate:100, alone:10
+2025-10-27 23:32:26, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-27 23:39:21, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:16
+2025-10-27 23:52:28, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:85
+2025-10-27 23:54:01, EXEC, v:1, k:poo@grafite, mode:FULL, rate:40, size:105
+2025-10-27 23:54:19, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-27 23:54:24, EXEC, v:1, k:poo@grafite, mode:FULL, rate:40, size:106
+2025-10-27 23:54:34, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:108
+2025-10-27 23:55:16, EXEC, v:1, k:poo@grafite, mode:FULL, rate:40, size:110
+2025-10-27 23:56:49, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:111
+2025-10-27 23:58:53, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100, size:109
+2025-10-27 23:59:02, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-27 23:59:21, SELF, v:1, k:poo@grafite, rate:100, alone:10
